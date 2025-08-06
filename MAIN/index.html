@@ -16,9 +16,6 @@
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="index.html">POS SYSTEM</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
             <div class="d-flex align-items-center gap-2">
   <!-- Бар кодоор хайх -->
   <form class="form-inline my-2 my-md-0">
@@ -39,8 +36,34 @@
       </button>
     </div>
   </form>
-</div>
 
+  <form>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#plus-menu">
+  Нэмэлт зэс
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="plus-menu" tabindex="-1" aria-labelledby="plus-menu1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="plus-menu1">Нэмэлт зэс</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </form>
+</div>
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
@@ -92,7 +115,7 @@
                                 <td>10%</td>
                                 <td>500₮</td>
                                 <td>4500₮</td>
-                                <td><button class="btn btn-primary">Устгах</button></td>
+                                <td><button type="button" class="btn btn-outline-danger">Устгах</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -102,7 +125,7 @@
                                 <td>0%</td>
                                 <td>0₮</td>
                                 <td>3000₮</td> 
-                                <td><button class="btn btn-primary">Устгах</button></td>
+                                <td><button type="button" class="btn btn-outline-danger">Устгах</button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -111,11 +134,11 @@
             <footer>
   <div class="summary-footer d-flex justify-content-between align-items-center p-3" style="background:#ccc;">
     <div>
-      <strong>НИЙТ БАРАА -</strong>
+      <h5>НИЙТ БАРАА-</h5>
     </div>
     <div class="text-end">
-      <div>хөнгөлөлт -</div>
-      <div>нийт төлөх дүн -</div>
+      <div>хөнгөлөлт-</div>
+      <div>нийт төлөх дүн-</div>
     </div>
   </div>
   <div class="d-flex justify-content-end gap-2 p-3" style="background:#ddd;">
@@ -156,6 +179,7 @@
           <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#deliveryModal">
             <i class="fas fa-truck"></i> ХҮРГЭЛТ
           </button>
+        </div>
 <!-- Modal -->
 <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="delivery" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -181,7 +205,6 @@
 <div class="col-md-6">
     
 </div>
-
             <div class="col-md-6">
               
             </div>
